@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mychef Design System - Style Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body { 
+            margin: 0;
+            padding: var(--space-medium);
+            background-color: var(--color-bg-primary);
+        }
+        .demo-section {
+            margin-bottom: var(--space-xxl);
+            padding: var(--space-large);
+            background: white;
+            border-radius: var(--radius-card);
+            box-shadow: var(--shadow-card);
+        }
+        .color-swatch {
+            display: inline-block;
+            width: 100px;
+            height: 60px;
+            margin: var(--space-tiny);
+            border-radius: var(--radius-button);
+            text-align: center;
+            line-height: 60px;
+            font-size: var(--font-size-body-small);
+            font-weight: var(--font-weight-medium);
+        }
+        .spacing-demo {
+            background: var(--color-light-sage);
+            margin: var(--space-tiny) 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="section text-center">
+            <h1>Mychef Design System</h1>
+            <p class="text-large">A comprehensive style guide for the Mychef platform</p>
+        </header>
+
+        <!-- Colors -->
+        <section class="demo-section">
+            <h2>Color Palette</h2>
+            <div class="mb-3">
+                <h3>Primary Colors</h3>
+                <div class="color-swatch" style="background-color: var(--color-creamy-white); color: var(--color-charcoal); border: 1px solid #ddd;">
+                    Creamy White
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-light-sage); color: var(--color-forest-green);">
+                    Light Sage
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-forest-green); color: var(--color-creamy-white);">
+                    Forest Green
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-terracotta); color: var(--color-creamy-white);">
+                    Terracotta
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-charcoal); color: var(--color-creamy-white);">
+                    Charcoal
+                </div>
+                <div class="color-swatch" style="background-color: var(--color-golden-yellow); color: var(--color-charcoal);">
+                    Golden Yellow
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section class="demo-section">
+            <h2>Typography</h2>
+            <h1>Heading 1 - Inter Bold 48px</h1>
+            <h2>Heading 2 - Inter Bold 36px</h2>
+            <h3>Heading 3 - Inter Semibold 28px</h3>
+            <h4>Heading 4 - Inter Semibold 24px</h4>
+            <h5>Heading 5 - Inter Semibold 20px</h5>
+            <p class="text-large">Body Large - Inter Regular 18px - Perfect for important descriptions and introductory text.</p>
+            <p>Body Text - Inter Regular 16px - The standard body text used throughout the application for optimal readability.</p>
+            <p class="text-small">Body Small - Inter Regular 14px - Used for secondary information and captions.</p>
+            <p class="text-caption">CAPTION TEXT - INTER MEDIUM 12PX - FOR LABELS AND METADATA</p>
+        </section>
+
+        <!-- Spacing -->
+        <section class="demo-section">
+            <h2>Spacing System (8px Grid)</h2>
+            <div class="mb-2">
+                <strong>Micro (4px):</strong> <span class="spacing-demo" style="width: 4px; height: 20px;"></span>
+            </div>
+            <div class="mb-2">
+                <strong>Tiny (8px):</strong> <span class="spacing-demo" style="width: 8px; height: 20px;"></span>
+            </div>
+            <div class="mb-2">
+                <strong>Small (16px):</strong> <span class="spacing-demo" style="width: 16px; height: 20px;"></span>
+            </div>
+            <div class="mb-2">
+                <strong>Medium (24px):</strong> <span class="spacing-demo" style="width: 24px; height: 20px;"></span>
+            </div>
+            <div class="mb-2">
+                <strong>Large (32px):</strong> <span class="spacing-demo" style="width: 32px; height: 20px;"></span>
+            </div>
+            <div class="mb-2">
+                <strong>XL (48px):</strong> <span class="spacing-demo" style="width: 48px; height: 20px;"></span>
+            </div>
+            <div class="mb-2">
+                <strong>XXL (64px):</strong> <span class="spacing-demo" style="width: 64px; height: 20px;"></span>
+            </div>
+        </section>
+
+        <!-- Buttons -->
+        <section class="demo-section">
+            <h2>Buttons</h2>
+            
+            <div class="mb-4">
+                <h3>Button Types</h3>
+                <div class="btn-group">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-outline">Outline Button</button>
+                    <button class="btn btn-text">Text Button</button>
+                    <button class="btn btn-icon">🔍</button>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h3>Button Sizes</h3>
+                <div class="btn-group">
+                    <button class="btn btn-primary btn-small">Small Button</button>
+                    <button class="btn btn-primary btn-medium">Medium Button</button>
+                    <button class="btn btn-primary btn-large">Large Button</button>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h3>Button States</h3>
+                <div class="btn-group">
+                    <button class="btn btn-primary">Default</button>
+                    <button class="btn btn-primary" disabled>Disabled</button>
+                    <button class="btn btn-primary btn-loading">Loading</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-error">Error</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components -->
+        <section class="demo-section">
+            <h2>Components</h2>
+            
+            <div class="mb-4">
+                <h3>Cards</h3>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Chef Profile Card</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>This is a sample chef profile card with all the standard elements.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-small">View Profile</button>
+                            <button class="btn btn-outline btn-small">Message</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Simple Card</h4>
+                            <p>A basic card without header or footer.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card card-compact">
+                        <div class="card-body">
+                            <h5>Compact Card</h5>
+                            <p class="text-small">Reduced padding for tight spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h3>Badges & Tags</h3>
+                <div class="mb-2">
+                    <span class="badge badge-verified">✓ Verified Chef</span>
+                    <span class="badge badge-category">Indonesian Cuisine</span>
+                    <span class="badge badge-status">Available</span>
+                </div>
+                <div>
+                    <span class="tag">Vegetarian</span>
+                    <span class="tag">Spicy</span>
+                    <span class="tag">Traditional</span>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h3>Avatars</h3>
+                <div class="d-flex align-center gap-2">
+                    <div class="avatar avatar-small">JS</div>
+                    <div class="avatar avatar-medium">AB</div>
+                    <div class="avatar avatar-large">CD</div>
+                    <div class="avatar avatar-xl">EF</div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h3>Forms</h3>
+                <div style="max-width: 400px;">
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-input" placeholder="your@email.com">
+                        <div class="form-help">We'll never share your email with anyone.</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-textarea" placeholder="Tell us about your cooking preferences..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletter">
+                            <label for="newsletter">Subscribe to newsletter</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h3>Alerts</h3>
+                <div class="alert alert-success">
+                    <strong>Success!</strong> Your booking has been confirmed.
+                </div>
+                <div class="alert alert-warning">
+                    <strong>Warning!</strong> Please verify your email address.
+                </div>
+                <div class="alert alert-error">
+                    <strong>Error!</strong> Something went wrong. Please try again.
+                </div>
+                <div class="alert alert-info">
+                    <strong>Info!</strong> New chefs are joining daily in your area.
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-5 pt-5" style="border-top: 1px solid var(--color-border-light);">
+            <p class="text-small">Mychef Design System - Built with ❤️ for connecting food lovers with local chefs</p>
+        </footer>
+    </div>
+</body>
+</html>
