@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Mychef Design System Variables */
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #FAF8F5;
+    color: rgba(44, 44, 44, 0.85);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #2C2C2C;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-forest-green hover:bg-forest-green-hover text-creamy-white font-semibold py-3 px-8 rounded-mychef-sm transition-all duration-300 inline-flex items-center gap-2;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(45, 95, 63, 0.3);
+  }
+
+  .btn-secondary {
+    @apply bg-terracotta hover:bg-terracotta-hover text-creamy-white font-semibold py-3 px-8 rounded-mychef-sm transition-all duration-300 inline-flex items-center gap-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-forest-green text-forest-green hover:bg-light-sage font-semibold py-3 px-8 rounded-mychef-sm transition-all duration-300 inline-flex items-center gap-2;
+  }
+
+  .btn-text {
+    @apply text-charcoal hover:text-forest-green font-medium py-2 px-4 transition-colors duration-300 inline-flex items-center gap-2 hover:underline;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(45, 95, 63, 0.95) 0%,
+      rgba(45, 95, 63, 0.7) 40%,
+      transparent 70%
+    );
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .container-mychef {
+    @apply max-w-7xl mx-auto px-6 lg:px-12;
+  }
+
+  .card-mychef {
+    @apply bg-white rounded-mychef p-6 shadow-mychef-card transition-all duration-300;
+  }
+
+  .card-mychef:hover {
+    @apply shadow-mychef-hover;
+    transform: translateY(-2px);
+  }
+
+  .badge-verified {
+    @apply bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium inline-flex items-center gap-1;
+  }
+
+  .badge-category {
+    @apply bg-light-sage text-forest-green px-3 py-1 rounded-full text-sm font-medium;
+  }
+}
